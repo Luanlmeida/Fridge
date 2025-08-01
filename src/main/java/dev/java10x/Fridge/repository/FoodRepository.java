@@ -1,5 +1,7 @@
 package dev.java10x.Fridge.repository;
 
-public class FoodRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface FoodRepository extends JpaRepository{
 
 }
