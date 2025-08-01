@@ -1,9 +1,12 @@
 package dev.java10x.Fridge.controller;
 
+import java.util.List;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import dev.java10x.Fridge.model.Food;
 import dev.java10x.Fridge.service.FoodService;
 
 @RestController
@@ -17,5 +20,5 @@ public class FoodController {
     }
 
     @GetMapping
-    public List<Food> getAll() {return foodService.getAll()}
+    public List<Food> getAll() {return foodService.getAll();}
 }
